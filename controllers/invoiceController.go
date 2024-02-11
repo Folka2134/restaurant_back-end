@@ -1,21 +1,33 @@
 package controllers
 
-func GetInvoices() {
-	// Code for getting invoices
+import "github.com/gin-gonic/gin"
+
+func GetInvoices() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func GetInvoice() {
-	// Code for getting a specific invoice
+func GetInvoice() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func CreateInvoice() {
-	// Code for creating a new invoice
+func CreateInvoice() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func UpdateInvoice() {
-	// Code for updating an existing invoice
+func UpdateInvoice() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func DeleteInvoice() {
-	// Code for deleting an invoice
+func DeleteInvoice() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }

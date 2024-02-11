@@ -1,23 +1,35 @@
 package controllers
 
-import "net/http"
+import (
+	"github.com/gin-gonic/gin"
+)
 
-func GetOrders(w http.ResponseWriter, r *http.Request) {
-	// Function implementation
+func GetOrders() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func GetOrder(w http.ResponseWriter, r *http.Request) {
-	// Function implementation
+func GetOrder() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func CreateOrder(w http.ResponseWriter, r *http.Request) {
-	// Function implementation
+func CreateOrder() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func UpdateOrder(w http.ResponseWriter, r *http.Request) {
-	// Function implementation
+func UpdateOrder() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func DeleteOrder(w http.ResponseWriter, r *http.Request) {
-	// Function implementation
+func DeleteOrder() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }

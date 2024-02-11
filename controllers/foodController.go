@@ -1,21 +1,41 @@
 package controllers
 
-func GetFoods() {
-	// Add code to retrieve all foods
+import "github.com/gin-gonic/gin"
+
+func GetFoods() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func GetFood() {
-	// Add code to retrieve a specific food
+func GetFood() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func CreateFood() {
-	// Add code to create a new food
+func CreateFood() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func UpdateFood() {
-	// Add code to update a food
+func UpdateFood() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func DeleteFood() {
-	// Add code to delete a food
+func DeleteFood() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
+}
+
+func round(num float64) int {
+	return 0
+}
+
+func toFixed(num float64, precision int) float64 {
+	return 0
 }

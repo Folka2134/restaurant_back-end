@@ -1,25 +1,46 @@
 package controllers
 
 import (
-	"net/http"
+	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-func GetOrderItems(w http.ResponseWriter, r *http.Request) {
-	// Function implementation goes here
+func GetOrderItems() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func GetOrderItem(w http.ResponseWriter, r *http.Request) {
-	// Function implementation goes here
+func GetOrderItem() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func CreateOrderItem(w http.ResponseWriter, r *http.Request) {
-	// Function implementation goes here
+func GetOrderItemsByOrder() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func UpdateOrderItem(w http.ResponseWriter, r *http.Request) {
-	// Function implementation goes here
+func ItemsByOrder(id string) (OrderItems []primitive.M, err error) {
+	return OrderItems, nil
 }
 
-func DeleteOrderItem(w http.ResponseWriter, r *http.Request) {
-	// Function implementation goes here
+func CreateOrderItem() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
+}
+
+func UpdateOrderItem() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
+}
+
+func DeleteOrderItem() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }

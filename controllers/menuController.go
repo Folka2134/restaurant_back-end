@@ -1,21 +1,33 @@
 package controllers
 
-func GetMenus() {
-	// Function implementation goes here
+import "github.com/gin-gonic/gin"
+
+func GetMenus() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func GetMenu(menuID int) {
-	// Function implementation goes here
+func GetMenu() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func CreateMenu(menuData Menu) {
-	// Function implementation goes here
+func CreateMenu() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func UpdateMenu(menuID int, menuData Menu) {
-	// Function implementation goes here
+func UpdateMenu() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func DeleteMenu(menuID int) {
-	// Function implementation goes here
+func DeleteMenu() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }

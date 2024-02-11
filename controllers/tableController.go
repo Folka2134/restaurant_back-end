@@ -1,28 +1,35 @@
 package controllers
 
-import "github.com/your-package/models"
+import (
+	"github.com/gin-gonic/gin"
+)
 
-// GetTables retrieves all tables
-func GetTables() ([]models.Table, error) {
-	// implementation goes here
+func GetTables() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-// GetTable retrieves a specific table by ID
-func GetTable(tableID int) (*models.Table, error) {
-	// implementation goes here
+func GetTable() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-// CreateTable creates a new table
-func CreateTable(table *models.Table) error {
-	// implementation goes here
+func CreateTable() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-// UpdateTable updates an existing table
-func UpdateTable(table *models.Table) error {
-	// implementation goes here
+func UpdateTable() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-// DeleteTable deletes a table by ID
-func DeleteTable(tableID int) error {
-	// implementation goes here
+func DeleteTable() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
