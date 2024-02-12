@@ -181,7 +181,17 @@ func UpdateFood() gin.HandlerFunc {
 
 func DeleteFood() gin.HandlerFunc {
 	return func(c *gin.Context) {
+		ctx, cancel := context.WithTimeout(context.Background(), 100*time.Second)
+		defer cancel()
+		foodId := c.Param("food_id")
+		filter := bson.M{"food_id": foodId}
 
+		result, err := foodCollection.DeleteOne(ctx, filter)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error while deleting food"})
+			return
+		}
+		c.JSON(http.StatusOK, result)
 	}
 }
 
